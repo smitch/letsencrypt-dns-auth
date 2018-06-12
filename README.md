@@ -20,7 +20,7 @@ Rename vars.sample to vars. Set username, password, tenant id in vars.
 ```
 # certbot renew --manual -m "<mail address>" --agree-tos --manual-public-ip-logging-ok --preferred-challenges dns-01 --server https://acme-v02.api.letsencrypt.org/directory --manual-auth-hook /path/to/create-auth-record.sh --manual-cleanup-hook /path/to/delete-auth-record.sh —-post-hook “systemctl restart httpd”
 ```
-adding —-quiet option is recommended for cron job.
+adding --quiet option is recommended for cron job.
 
 # Licence
 This software is released under the MIT License.
